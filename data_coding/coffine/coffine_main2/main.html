@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커핀구루나루</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+</head>
+
+<body>
+
+  <!-- BEST-롤링슬라이더 영역 -->
+
+    <article id="demo-flat" class="demo">
+        <div class="menu">
+                <h2 class="menu-title">BEST MENU</h2>
+
+            <div class="menu-category">
+                <a href="/" class="menu-list">커피</a>
+                <a href="/" class="menu-list">티/음료</a>
+                <a href="/" class="menu-list">디저트</a>
+            </div>
+        </div>
+    
+        <div id="flat">
+            <ul>
+                <li data-flip-title="Red">
+                    <img src="image/밀키라떼.png">
+                </li>
+                <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                    <img src="image/더블 카페라떼.png">
+                 </li>
+                <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                    <img src="image/카페 아메리카노.png">
+                </li>
+                <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                    <img src="image/카라멜 마끼아또.png">
+                </li>
+                <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                    <img src="image/바닐라라떼.png">
+                </li>
+            </ul>
+          </div>
+    </article>
+
+
+    <!-- 커피 | 와인 배너 start -->
+   <section class="section-banner">
+    <!-- 커피 배너 -->
+    <div class="coffee-banner">
+        
+       <div class="coffee-banner-wrap">
+        <div class="coffee-banner-inner">
+            <div class="coffee-content1">
+                <h3 class="coffee-banner-title">COFFINE'S</h3>
+                <h3 class="coffee-banner-title banner-title">COFFEE</h3>
+                <div class="coffee-title-underline"></div>
+            </div>
+            <div class="coffee-content2">
+                <p class="coffee-banner-content content">최적의 로스팅 기법으로</p>
+                <p class="coffee-banner-content"> 언제 어디서나 조화로운 커피</p>
+            </div>
+          </div>
+          <div class="coffee-img">
+              <img src="image/coffee-img.png" alt="Coffee">
+          </div>
+       </div>
+          <!-- <div class="coffee-next-btn">
+              <a href="/">
+                  <img src="image/next.png" alt="Next Button">
+              </a>
+          </div>   -->
+      </div>
+
+      <!-- 와인 배너 -->
+      <div class="wine-banner">
+
+        <div class="wine-banner-wrap">
+            <div class="wine-banner-inner">
+                <div class="wine-content1">
+                    <h3 class="wine-banner-title">COFFINE'S</h3>
+                    <h3 class="wine-banner-title banner-title">WINE</h3>
+                    <div class="wine-title-underline"></div>
+                </div>
+               <div class="wine-content2">
+                    <p class="wine-banner-content content">최상의 향과 맛을 담은 와인</p>   
+               </div>
+              </div> 
+              <div class="wine-img">
+                  <img src="image/wine-img.png" alt="Coffee">
+              </div>
+        </div>
+           <!-- <div class="wine-next-btn">
+             <a href="/">
+              <img src="image/next.png" alt="Next Button">
+             </a>
+           </div>  -->
+      </div>
+   </section>
+
+    <!-- 커피 | 와인 배너 end -->
+    <!-- 온라인 스토어 start -->
+   <section>
+    <div class="online-store-setction">
+        <div class="online-store-title-wrap">
+            <h2 class="online-title">COFFINE</h2>
+            <h2 class="online-title">MALL</h2>
+            <p>커핀구루나루를 이제 온라인몰에서 만나요.</p>
+            <a href="/">
+                온라인몰 바로가기 &nbsp;&nbsp;&gt;
+            </a>
+        </div>
+        <div class="online-store-img">
+            <img src="image/wave.png" alt="">
+        </div>
+    </div>
+   </section>
+      <!-- 온라인 스토어 end -->
+
+
+      <!-- BEST-롤링슬라이더 영역 script -->
+      <script>
+        var flat = $("#flat").flipster({
+            style: 'flat',
+            spacing: -0.25
+        });
+    </script>    
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>커핀그루나루</title>
+
+    <link rel="stylesheet" href="coffine_menu/css/style_coffee.css" type="text/css">
+
+    <!--메인2---------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="coffine_main2/style.css">
+    <link rel="stylesheet" href="coffine_main2/jquery.flipster.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+	<!-- jQuery -->
+    <script src="coffine_menu/js/jquery-3.7.0.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="coffine_main2/jquery.flipster.min.js"></script>
+    <script src="coffine_menu/js/coffee.js"></script>
+
+    <script src="coffine_main3/js/coffine.js"></script>
+
+    <link rel="stylesheet" href="coffine_main3/css/coffine.css">
+
+
+    <!-- 슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--인스타 슬라이드-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+    <!--반응형 인스타 슬라이드-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <div style="max-width: 1920px;">
+    </div>
+    <!--메인1 헤드---------------------------------------->
+    <link rel="stylesheet" href="coffine_main1/style/coffin.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="coffine_main1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="coffine_main1/slick/slick-theme.css">
+
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+  
+      .slider {
+          width: 95%;
+          margin: 100px auto;
+      }
+  
+      .slick-slide {
+        margin: 0px 20px;
+      }
+  
+      .slick-slide img {
+        width: 100%;
+      }
+  
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+  
+
+      .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .2;
+      }
+      
+      .slick-active {
+        opacity: .5;
+      }
+  
+      .slick-current {
+        opacity: 1;
+      }
+
+      .slick-current img {
+        width:103%;
+      }
+
+      .animated-title1 {color:rgb(183, 43, 226); font-size:60px; font-family:Noto Sans KR; font-weight:bold; position: relative; width: 100%;max-width:100%; height: 72px; overflow-x: hidden; overflow-y: hidden; }
+      .animated-title2 {color:black; font-size:60px; font-family:Noto Sans KR; font-weight:bold; position: relative; width: 100%;max-width:100%; height: 72px; overflow-x: hidden; overflow-y: hidden; }
+
+    .animated-title1 .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 60s linear infinite; }
+    .animated-title2 .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 60s linear infinite; }
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+    }
+    @media (hover: hover) and (min-width: 700px){
+    .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu_all">
+            <div class="menu_logo_center">
+            <div class="menu_logo">
+                <a onClick="window.location.reload()"
+                style="cursor: pointer;">
+                <!--로고 이미지-->
+                <img src="coffine_menu/image/logo.png" class="logo_img"></a>
+            </div>
+            </div>
+
+        <div class="menu_both">
+            <div class="menu_login">
+                <ul class="menu_login_ul">
+                    <li><a class="login_a" href="http://127.0.0.1:5500/%EC%BB%A4%ED%95%80%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C%20EN.html#">EN</a></li>
+                    <li><a class="login_a" href="#">로그인</a></li>
+                    <li><a class="login_a" href="#">회원가입</a></li>
+                    <li><a class="login_a" href="#">아카데미</a></li>
+                    <li><a class="login_a_app" href="#">커핀그루나루 APP</a></li>
+                </ul>
+    <!--숨긴 목록-->        
+            <div class="menu_hide_btn">
+                <!--버튼 이미지-->
+                <a href="#"><img src="coffine_menu/image/List_black.png"></a>
+            <div class="hide_bg">
+                <div class="hide_width">
+                    <div class="hide_list">
+
+                    <div class="close_btn">
+                        <div id="close_btn_div">
+                            <div id="close_btn">X</div>
+                            <div id="close_btn_back">X</div>
+                        </div>
+                    </div>
+
+                        <div class="list2">
+                        <ul class="list2_ul">
+                            <li class="list2_li" id ="stretch">
+                                <div style="width:200px">메뉴</div>
+                                <ul class="sub_list2">
+                                    <li>New & Best</li>
+                                    <li>Theme Menu</li>
+                                    <li>Coffee</li>
+                                    <li>Tea & Beverage</li>
+                                    <li>Wine</li>
+                                    <li>Dessert</li>
+                                    <li>MD</li>
+                                </ul>
+                            </li>
+                            <li class="list2_li" id ="stretch">
+                                <div style="width:200px">스토어</div>
+                                <ul class="sub_list2">
+                                    <li>매장찾기</li>
+                                    <li>신규매장</li>
+                                </ul>
+                            </li>
+                            <li class="list2_li" id ="stretch">
+                                <div style="width:200px">이벤트</div>
+                                <ul class="sub_list2">
+                                    <li>진행중인 이벤트</li>
+                                    <li>종료된 이벤트</li>
+                                    <li>당첨자 발표</li>
+                                </ul>
+                            </li>
+                            <li class="list2_li" id ="stretch">
+                                <div style="width:200px">멤버쉽</div>
+                                <ul class="sub_list2">
+                                    <li>퍼플멤버스 소개</li>
+                                    <li>퍼플멤버스 혜택</li>
+                                    <li>퍼플멤버스 충전형/<br>
+                                        기프트카드</li>
+                                </ul>
+                            </li>
+                            <li class="list2_li" id ="stretch">
+                                <div style="width:200px">커뮤니티</div>
+                                <ul class="sub_list2">
+                                    <li>새소식</li>
+                                    <li>자주묻는 질문</li>
+                                    <li>고객의 소리</li>
+                                </ul>
+                            </li>
+                            <li class="list2_li" id ="stretch">
+                                <div style="width:200px">커핀스토리</div>
+                                <ul class="sub_list2">
+                                    <li>커핀그루나루<br>소개</li>
+                                    <li>Coffen<br>+Wine</li>
+                                    <li>메뉴 스토리</li>
+                                    <li>광고자료</li>
+                                    <li>글로벌<br>브랜드</li>
+                                    <li>사회공헌</li>
+                                    <li>채용정보</li>
+                                    <li>찾아오시는 길</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        <!--본 메뉴-->  
+            <div class="menu_k">
+                <ul class="menu_ul">
+                    <li class="menu1"><a class="menu_a" href="#" id="frominsideout">메뉴</a>
+                        <ul class="sub_menu1" id="sub_menu">
+                            <li>New & Best</li>
+                            <li>Theme Menu</li>
+                            <li>Coffee</li>
+                            <li>Tea & Beverage</li>
+                            <li>Wine</li>
+                            <li>Dessert</li>
+                            <li>MD</li>
+                        </ul>
+                    </li>
+                    <li class="menu_line">｜</li>
+                    <li class="menu2"><a class="menu_a" href="#">스토어</a>
+                        <ul class="sub_menu2" id="sub_menu">
+                            <li>매장찾기</li>
+                            <li>신규매장</li>
+                        </ul>
+                    </li>
+                    <li class="menu_line">｜</li>
+                    <li class="menu3" id="sub_menu"><a class="menu_a" href="#">이벤트</a>
+                        <ul class="sub_menu3">
+                            <li>진행중인 이벤트</li>
+                            <li>종료된 이벤트</li>
+                            <li>당첨자 발표</li>
+                        </ul>
+                    </li>
+                    <li class="menu_line">｜</li>
+                    <li class="menu4"><a class="menu_a" href="#">멤버쉽</a>
+                        <ul class="sub_menu4" id="sub_menu">
+                            <li>퍼플멤버스 소개</li>
+                            <li>퍼플멤버스 혜택</li>
+                            <li style="line-height: 1.3">퍼플멤버스 충전형/
+                                기프트카드</li>
+                        </ul>
+                    </li>
+                    <li class="menu_line">｜</li>
+                    <li class="menu5"><a class="menu_a" href="#">커뮤니티</a>
+                        <ul class="sub_menu5" id="sub_menu">
+                            <li>새소식</li>
+                            <li>자주묻는 질문</li>
+                            <li>고객의 소리</li>
+                        </ul>
+                    </li>
+                    <li class="menu_line">｜</li>
+                    <li class="menu6"><a class="menu_a" href="#">커핀스토리</a>
+                        <ul class="sub_menu6" id="sub_menu">
+                            <li>커핀그루나루 소개</li>
+                            <li>Coffen +Wine</li>
+                            <li>메뉴 스토리</li>
+                            <li>광고자료</li>
+                            <li>글로벌 브랜드</li>
+                            <li>사회공헌</li>
+                            <li>채용정보</li>
+                            <li>찾아오시는 길</li>
+                        </ul>
+                    </li>
+                    <li class="menu7">
+                        <a class="menu7_a" href="#">가맹문의</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu_bg">
+        </div>
+    </header>
+
+    <section>
+            <div id=pop_top_div>
+            <div id="pop_div">
+                <ul id="pop">
+                    <li id="pop_front">가맹안내</li>
+                    <li id="pop_front">가맹상담</li>
+                    <li id="pop_front">투자비용</li>
+                </ul>
+            </div>
+            </div>
+
+    </section>
+<!--메인1--------------------------------------------->
+    <section>
+        <div class="banner">
+            <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide>
+                  <img src="coffine_main1/image/banner1.jpg" class="pc"> 
+                  <img src="coffine_main1/image/mobile-1.jpg" class="mobile"></swiper-slide>
+                <swiper-slide>
+                  <img src="coffine_main1/image/banner2.jpg" class="pc"> 
+                  <img src="coffine_main1/image/mobile-2.jpg" class="mobile"></swiper-slide>
+                <swiper-slide>
+                  <img src="coffine_main1/image/banner3.jpg" class="pc"> 
+                  <img src="coffine_main1/image/mobile-3.jpg" class="mobile">></swiper-slide>
+            </swiper-container>
+          </div>
+          
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+      
+      
+            <div class="main2">
+              <div class="New_TEXT">
+              <div class="new-text">
+                  <div class="animated-title1">
+                      <div class="track">
+                          <div class="content1">&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU</div>
+                      </div>
+                  </div>
+                  <div class="animated-title2">
+                      <div class="track">
+                          <div class="content1">&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU</div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="new_img">
+                  <div class="New_img_lis">
+                  <section class="center slider">
+                      <div>
+                      <img src="coffine_main1/image/hallabong juice.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/hallabong late.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/hallabong tea.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/kiwi juice.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/kiwi latte.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/lime sangria.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/sangria white.png">
+                      </div>
+                      <div>
+                      <img src="coffine_main1/image/dark choco.png">
+                      </div>
+                  </section>
+                  </div>
+                </div>
+          </div>
+          
+      
+         
+    </section>
+<!--메인2--------------------------------------------->
+    <section>
+        <!-- BEST-롤링슬라이더 영역 -->
+
+    <article id="demo-flat" class="demo">
+        <div class="menu">
+                <h2 class="menu-title">BEST MENU</h2>
+
+            <div class="menu-category">
+                <a href="/" class="menu-list">커피</a>
+                <a href="/" class="menu-list">티/음료</a>
+                <a href="/" class="menu-list">디저트</a>
+            </div>
+        </div>
+    
+        <div id="flat">
+            <ul>
+                <li data-flip-title="Red">
+                    <img src="coffine_main2/image/Milky_latte.png">
+                </li>
+                <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                    <img src="coffine_main2/image/Double_cafelatte.png">
+                 </li>
+                <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                    <img src="coffine_main2/image/Caffe_americano.png">
+                </li>
+                <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                    <img src="coffine_main2/image/Latte macchiato.png">
+                </li>
+                <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                    <img src="coffine_main2/image/vanilla_latte.png">
+                </li>
+            </ul>
+          </div>
+    </article>
+
+
+    <!-- 커피 | 와인 배너 start -->
+   <section class="section-banner">
+    <!-- 커피 배너 -->
+    <div class="coffee-banner">
+        
+       <div class="coffee-banner-wrap">
+        <div class="coffee-banner-inner">
+            <div class="coffee-content1">
+                <h3 class="coffee-banner-title">COFFINE'S</h3>
+                <h3 class="coffee-banner-title banner-title">COFFEE</h3>
+                <div class="coffee-title-underline"></div>
+            </div>
+            <a href="/">
+                <div class="coffee-content2">
+                    <p class="coffee-banner-content content">최적의 로스팅 기법으로</p>
+                    <p class="coffee-banner-content"> 언제 어디서나 조화로운 커피&nbsp;&nbsp;&gt;</p>
+                </div>
+            </a>
+          </div>
+          <div class="coffee-img" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+              <img src="coffine_main2/image/coffee-img.png" alt="Coffee">
+          </div>
+       </div>
+      </div>
+
+      <!-- 와인 배너 -->
+      <div class="wine-banner">
+
+        <div class="wine-banner-wrap">
+            <div class="wine-banner-inner">
+                <div class="wine-content1">
+                    <h3 class="wine-banner-title">COFFINE'S</h3>
+                    <h3 class="wine-banner-title banner-title">WINE</h3>
+                    <div class="wine-title-underline"></div>
+                </div>
+               <a href="/">
+                  <div class="wine-content2">
+                    <p class="wine-banner-content content">최상의 향과 맛을 담은 와인&nbsp;&nbsp;&gt;</p>   
+               </div>
+               </a>
+              </div> 
+              <div class="wine-img" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                  <img src="coffine_main2/image/wine-img.png" alt="Coffee">
+              </div>
+        </div>
+      </div>
+   </section>
+
+    <!-- 커피 | 와인 배너 end -->
+    <!-- 온라인 스토어 start -->
+   <section>
+    <div class="online-store-setction">
+        <div class="online-store-title-wrap">
+            <h2 class="online-title">COFFINE</h2>
+            <h2 class="online-title">MALL</h2>
+            <p>커핀구루나루를 이제 온라인몰에서 만나요.</p>
+            <a href="/">
+                온라인몰 바로가기 &nbsp;&nbsp;&gt;
+            </a>
+        </div>
+    </div>
+   </section>
+      <!-- 온라인 스토어 end -->
+
+      <!-- BEST-롤링슬라이더 영역 script -->
+      <script>
+        var flat = $("#flat").flipster({
+            style: 'flat',
+            spacing: -0.25
+        });
+    </script>
+    <!-- 커피 & 와인 이미지 Fade In script -->
+      <script>AOS.init();</script>
+        
+    </section>
+<!--푸터---------------------------------------------->
+    <footer>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="coffine_main3/image/Membership_banner1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="coffine_main3/image/Membership_banner3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="coffine_main3/image/Membership_banner2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+        <!-- 슬라이드 -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                loop: true,
+                autoplay:true
+            });
+        </script>
+    
+        <div class="bot_serch">
+            <div class="bot_serch2">
+                매장검색
+            </div>
+            <div class="bot_serch3">
+                <div class="bot_serch4">
+                    <input class="bot_serch_input" type="text" placeholder="지역이름으로 검색해보세요.">
+                    <button class="bot_serch_button" type="button">
+                        <img src="coffine_main3/image/Search.png" style="width:20px; height:20px;" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!--인스타 슬라이드-->
+        <div class="bot_insta">
+            <div class="bot_insta_text1">
+                고요하고 잔잔한
+            </div>
+            <div class="bot_inclu">
+                <div class="bot_insta_text2">
+                    커핀의 하루
+                </div>
+                <div class="bot_pur_bg"></div>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div id="js-card-1" class="card js-card-1 card-1">
+                        <img src="coffine_main3/image/insta2.jpg" alt="">
+                    </div>
+                    <div id="js-card-2" class="card js-card-2 card-2">
+                        <img src="coffine_main3/image/Insta1.jpg" alt="">
+                    </div>
+                    <div id="js-card-3" class="card js-card-3 card-3">
+                        <img src="coffine_main3/image/insta3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="insAfter">
+                <ul class="mobile_insta1">
+                    <li class="mobile_insta"><img src="coffine_main3/image/insta2.jpg" style="width:300px; height:471.75px;" alt=""></li>
+                    <li class="mobile_insta"><img src="coffine_main3/image/Insta1.jpg" style="width:300px; height:471.75px;" alt=""></li>
+                    <li class="mobile_insta"><img src="coffine_main3/image/insta3.jpg" style="width:300px; height:471.75px;" alt=""></li>
+                </ul>
+            </div>
+    
+            <div class="bot_url">
+                <div class="bot_url_face">
+                    <a href="https://www.facebook.com/COFFINEGURUNARUkorea" target="_blank">
+                        <img src="coffine_main3/image/facebook_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="bot_url_insta">
+                    <a href="https://www.instagram.com/coffine_gurunaru/" target="_blank">
+                        <img src="coffine_main3/image/insta_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+        <script src="coffine_main3/js/insta_slide.js"></script>
+    
+        <!--푸터-->
+        <div class="bot_footer_border">
+            <div class="bot_footer">
+                <div class="bot_footer1">
+                    <div>
+                        <img src="coffine_main3/image/Logo.png" style="width:50px; height:50px;" alt="">
+                    </div>
+                    <ul class="bot_footer_text">
+                        <li class="bot_footer_text1">
+                            COPYRIGHT© 2016 COFFINE GURUNARU ALL RIGHTS RESERVED.
+                        </li>
+                        <li class="bot_footer_text2">
+                            대표자 김은희
+                        </li>
+                        <li class="bot_footer_text2">
+                            사업자등록번호 215 - 87 - 06529
+                        </li>
+                        <li class="bot_footer_text2_S">
+                            서울시 송파구 백제고분로114
+                        </li>
+                        <li class="bot_footer_text2">
+                            고객센터 02 - 2202 - 0791
+                        </li>
+                        <li class="bot_footer_text2">
+                            FAX 02 - 2202 - 0807
+                        </li>
+                    </ul>
+                </div>
+                <div class="bot_footer2">
+                    <div class="bot_footer2_info1">
+                        <div class="bot_footer2_info2">
+                            <img src="coffine_main3/image/info_icon.png" style="width:80px; height:80px;" alt="">
+                            <p class="bot_footer_info3">채용정보</p>
+                        </div>
+                        <div class="bot_footer2_info2">
+                            <img src="coffine_main3/image/Store_inquiry.png" style="width:80px; height:80px;" alt="">
+                            <p class="bot_footer_info3">가맹안내</p>
+                        </div>
+                        <div class="bot_footer2_info2">
+                            <img src="coffine_main3/image/Membership_icon.png" style="width:80px; height:80px;" alt="">
+                            <p class="bot_footer_info3">멤버십안내</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="coffine_main1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+
+        $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        responsive: [
+        {
+        breakpoint: 1920,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+        }
+        },
+        {
+        breakpoint: 720,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+        },
+
+        ]
+        });
+    });
+</script>

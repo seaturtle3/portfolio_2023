@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="/커핀/coffine/style/coffin.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
+
+    <style type="text/css">
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      .slider {
+          width: 95%;
+          margin: 100px auto;
+      }
+  
+      .slick-slide {
+        margin: 0px 20px;
+      }
+  
+      .slick-slide img {
+        width: 100%;
+      }
+  
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+  
+
+      .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .2;
+      }
+      
+      .slick-active {
+        opacity: .5;
+      }
+  
+      .slick-current {
+        opacity: 1;
+      }
+
+      .slick-current img {
+        width:103%;
+      }
+
+      .animated-title1 {color:rgb(183, 43, 226); font-size:60px; font-family:Noto Sans KR; font-weight:bold; position: relative; width: 100%;max-width:100%; height: 72px; overflow-x: hidden; overflow-y: hidden; }
+      .animated-title2 {color:black; font-size:60px; font-family:Noto Sans KR; font-weight:bold; position: relative; width: 100%;max-width:100%; height: 72px; overflow-x: hidden; overflow-y: hidden; }
+
+.animated-title1 .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 60s linear infinite; }
+.animated-title2 .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 60s linear infinite; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (hover: hover) and (min-width: 700px){
+.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+    }
+
+    </style>
+</head>
+    
+<body>
+    <div class="banner">
+      <swiper-container class="mySwiper" navigation="true">
+          <swiper-slide>
+            <img src="../image/banner1.jpg" class="pc"> 
+            <img src="../image/mobile-1.jpg" class="mobile"></swiper-slide>
+          <swiper-slide>
+            <img src="../image/banner2.jpg" class="pc"> 
+            <img src="../image/mobile-2.jpg" class="mobile"></swiper-slide>
+          <swiper-slide>
+            <img src="../image/banner3.jpg" class="pc"> 
+            <img src="../image/mobile-3.jpg" class="mobile">></swiper-slide>
+      </swiper-container>
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+
+      <div class="main2">
+        <div class="New_TEXT">
+        <div class="new-text">
+            <div class="animated-title1">
+                <div class="track">
+                    <div class="content1">&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU</div>
+                </div>
+            </div>
+            <div class="animated-title2">
+                <div class="track">
+                    <div class="content1">&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU&nbsp;NEW MENU</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="new_img">
+            <div class="New_img_lis">
+            <section class="center slider">
+                <div>
+                <img src="../image/hallabong juice.png">
+                </div>
+                <div>
+                <img src="../image/hallabong late.png">
+                </div>
+                <div>
+                <img src="../image/hallabong tea.png">
+                </div>
+                <div>
+                <img src="../image/kiwi juice.png">
+                </div>
+                <div>
+                <img src="../image/kiwi latte.png">
+                </div>
+                <div>
+                <img src="../image/lime sangria.png">
+                </div>
+                <div>
+                <img src="../image/sangria white.png">
+                </div>
+                <div>
+                <img src="../image/dark choco.png">
+                </div>
+            </section>
+            </div>
+          </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="../slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+
+      $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            responsive: [
+            {
+            breakpoint: 1920,
+            settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+            }
+            },
+            {
+            breakpoint: 720,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+            }
+        },
+      ]
+      });
+    });
+</script>
+
+
+</body>
+</html>

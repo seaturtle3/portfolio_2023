@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    font-family: 'pretendard-regular';
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+}
+.head {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.h_logo {
+    cursor: pointer;
+}
+.h_ul {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+}
+.h_ul > ul {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.h_ul > ul > li:hover {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.h_ord {
+    display: flex;
+    align-items: center;
+    background-color: #3E8714;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 1%;
+    cursor: pointer;
+}
+/*main*/
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main > div {
+    max-width: 1920px;
+    width: 100%;
+}
+
+
+/*section1*/
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec1 {
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
+}
+.sec1_vid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*section2*/
+
+
+/*article*/
+article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*footer*/

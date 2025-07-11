@@ -1,0 +1,412 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    margin: 0
+}
+
+/* 하단 메인 배너 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 검색창 */
+.bot_serch {
+    width: 68.75%;
+    margin: auto;
+    padding: 2% 0% 2% 0%
+}
+
+.bot_serch2 {
+    padding: 1% 1% 1% 0%;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bot_serch4 {
+    border: 1px solid #9966de;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.bot_serch_input {
+    width: 77%;
+    outline: none;
+    border: 0px;
+
+    padding: 1%;
+
+    font-size: 16px;
+    background-color: #9a66de00;
+}
+
+.bot_serch_button {
+    width: 5%;
+    outline: none;
+    border: 0px;
+
+    margin: 0% 0% 0% 12%;
+
+    background-color: #9a66de00;
+}
+
+/* 인스타 슬라이드 */
+.bot_insta {
+    width: 68.75%;
+    margin: auto;
+    padding: 2% 0% 4% 0%;
+    position:relative;
+}
+
+
+
+.bot_insta_text1 {
+    text-align: center;
+}
+
+.bot_inclu {
+    width: 30%;
+    margin: auto;
+
+    padding: 0% 0% 4% 0%;
+
+    position: relative;
+}
+
+.bot_insta_text2 {
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    position: relative;
+    z-index: 1
+}
+
+.bot_pur_bg {
+    background-color: #b490e4;
+    width: 100%;
+    height: 35px;
+
+    position: absolute;
+    top: 30px;
+    z-index: 0
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    height: 629px;
+    width: 400px;
+    /*추가*/z-index: 3
+}
+
+.card {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.card-1 {
+    background-color: blue;
+    height: 629px;
+    width: 400px;
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-2 {
+    height: 629px;
+    width: 400px;
+    background-color: gray;
+    text-align: center;
+
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-3 {
+    height: 629px;
+    width: 400px;
+    background-color: orangered;
+    text-align: center;
+
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-4 {
+    height: 629px;
+    width: 400px;
+    background-color: rgb(255, 173, 143);
+    text-align: center;
+
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+
+.bot_url {
+    padding: 10% 0% 3% 0%;
+    width: 90px;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+}
+
+.bot_url_face {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 0 5px 0 0
+}
+
+.bot_url_insta {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 0 0px 0 5px
+}
+
+.mobile_insta {
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 4px 20px;
+}
+
+#insAfter {
+    margin: 20px 160px;
+    width: 340px;
+    margin: 20px auto;
+    overflow: hidden;
+
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+
+    display:none;
+
+    background-color:#ffffff;
+}
+
+.mobile_insta1 {
+    width:1200px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* 푸터 */
+.bot_footer_border{
+    border-top:1px solid #dadada;
+    width:100%
+}
+
+.bot_footer {
+    width: 68.75%;
+    margin: auto;
+    padding: 2% 0% 10% 0%;
+}
+
+.bot_footer1{
+    width:58%;
+    float:left;
+    padding:0% 0% 4% 2%
+}
+
+.bot_footer_text{
+    padding:0;
+    margin:0
+}
+.bot_footer_text1{
+    font-size: 14px;
+    font-weight: 600;
+    margin:5px 5px 5px 0px;
+
+    display: inline-block;
+    width:100%;
+
+    padding:5px 0 0 0 
+}
+.bot_footer_text2{
+    font-size: 14px;
+    margin:5px 5px 5px 0px;
+
+    display: inline-block;
+
+    padding:5px 0 0 0 
+}
+.bot_footer_text2_S{
+    font-size: 14px;
+    margin:5px 5px 5px 0px;
+
+    display: inline-block;
+    width:40%;
+
+    padding:5px 0 0 0 
+}
+
+.bot_footer2{
+    width:40%;
+    float:right;
+}
+.bot_footer2_info1{
+    width:90%;
+    margin:auto
+}
+.bot_footer2_info2{
+    float:right;
+    padding:0 0 0 5%
+}
+.bot_footer_info3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/*반응*/
+@media(max-width:1200px) {
+    .bot_insta {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bot_footer2 {
+        display: none
+    }
+
+    .bot_footer1 {
+        width: 100%;
+        padding: 5% 0 5% 0
+    }
+
+    .bot_footer_text1 {
+        width: auto
+    }
+
+    .bot_footer_text2_S {
+        width: auto
+    }
+
+    .bot_footer1>* {
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:970px) {
+    .bot_inclu {
+        width: 40%
+    }
+}
+
+@media(max-width:720px) {
+    .bot_inclu {
+        width: 60%
+    }
+
+    .bot_serch_input {
+        margin: 1%
+    }
+
+    .bot_serch_button {
+        margin: 0 0 0 4%
+    }
+}
+
+@media(max-width:600px){
+    .carousel {
+        display: none;
+    }
+
+    #insAfter{
+        display:block;
+
+    }
+
+}
+@media(max-width:500px){
+    .bot_serch_button {
+        margin: 0 0 0 0;
+        width:auto
+    }
+    .bot_serch_input {
+        margin: 2% 0
+    }
+
+    .bot_serch_input {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:360px) {
+
+
+    .bot_serch3 {
+        padding: 10px 0 0 0
+    }
+
+}
+
+
+
+
+
+
+
+@media(min-width:1921px) {
+    .swiper {
+        width: 1920px
+    }
+
+    .bot_serch {
+        width: 1320px
+    }
+
+    .bot_insta {
+        width: 1320px
+    }
+
+    .bot_footer {
+        width: 1320px
+    }
+}
