@@ -40,6 +40,10 @@ html {
   text-transform: uppercase;
 }
 
+.container > div > h3, h5{
+  text-align: center;
+}
+
 .h1-div {
   font-weight: 300;
   margin-bottom: 3%;
